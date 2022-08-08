@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+        }
+            a:visited{
+            color: rgb(255, 0, 212)
+            }
+            a:active{
+                color:yellow
+            }
+            .especial:{
+                background-color: rgb(240, 156, 156);
+            }
+            .especial::before{
+                content:'&rArr' ;/*isso entre parenes deveria ser p coloca uma indicaçao no link ,
+                mais não funcionou , então o certo é copiar o simbolo.*/
+            }
+            .especial::after{
+                content: '&lArr';
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando com links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositorio do github </a></li>
+        <li><a href="https://youtube.com/cursoemvideo/"class='especial'>Canal da youtube</a></li>
+        <li><a href="www.cursoemvideo.com">Site do curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>
