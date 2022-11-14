@@ -1,12 +1,28 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & exibir=trocar');
+
+@import url('https://fonts.googleapis.com/css2?family= Passion+One:wght@700 & display = swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Great+Vibes & display = swap');
+
+/*isso aqui são as variases que são as fontes*/
+:root{
+--fonte1: Verdana, Geneva, Tahoma, sans-serif;
+--fonte2: 'Passion One', cursiva;
+--fonte3:'Sriracha', cursiva;
+--fonte4: 'Great Vibes', cursiva;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+   
 }
 html, body {
     min-height: 100vh;
     background-color: aliceblue;
+    font-family:var(--fonte4);
 }
 header {
     background-color: rgb(121, 94, 6);
@@ -16,6 +32,8 @@ header {
 header > h1 {
     padding-top: 50px;
    font-variant: small-caps;
+   font-family: var(--fonte2);
+   font-size: 10vw;/*isso deixa a letra com 10% do tamlho da tela , no caso a letra aumneta ou diminui de a =cordo com a tela*/
 }
 header > p {
     padding-bottom: 50px;
@@ -33,6 +51,7 @@ section { /*isso é o que da o efeito paralax*/
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);/*aqui to chamando as variaes*/
 
 }
 section.normal {
@@ -52,4 +71,5 @@ footer {
     color:white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte3);
 }
