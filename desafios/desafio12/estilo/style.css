@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2? family= Sriracha & exibir=trocar');
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family= Passion+One:wght@700 & display = swap');
-
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family= Great+Vibes & display = swap');
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600;700 & family= Passion+One:wght@400;700;900 & display=trocar');
 
-/*isso aqui são as variaves que são as fontes*/
-/*:root{
+/*isso aqui são as variavel que são as fontes*/
+:root{
 --fonte1: Verdana, Geneva, Tahoma, sans-serif;
 --fonte2: 'Passion One', cursiva;
 --fonte3:'Sriracha', cursiva;
 --fonte4: 'Great Vibes', cursiva;
-}*/
+--fonte5: 'Dancing Script', cursiva;
+}
 
 * {
     margin: 0px;
@@ -22,7 +23,7 @@
 html, body {
     min-height: 100vh;
     background-color: aliceblue;
-    font-family:
+    font-family:var(--fonte1)/*essa fonte são daqui , ai oega normal , so não quer pega as que eu impotei*/
 }
 header {
     background-color: rgb(121, 94, 6);
@@ -32,18 +33,18 @@ header {
 header > h1 {
     padding-top: 50px;
    font-variant: small-caps;
-   font-family: 
-   font-size: 10vw;/*isso deixa a letra com 10% do tamlho da tela , no caso a letra aumneta ou diminui de a =cordo com a tela*/
+   font-family: var(--fonte3) ;
+   font-size:10vw; /*isso deixa a letra com 10% do tamlho da tela , no caso a letra aumneta ou diminui de a =cordo com a tela*/
 }
 header > p {
     padding-bottom: 50px;
 }
-header a, footer a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-header a:hover, footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 section { /*isso é o que da o efeito paralax*/
@@ -51,7 +52,7 @@ section { /*isso é o que da o efeito paralax*/
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family:/*aqui to chamando as variaves*/
+    font-family:var(--fonte5);/*essa mesmo não pega*/
     font-size:2.5vw;
 
 }
@@ -92,5 +93,5 @@ footer {
     color:white;
     text-align: center;
     padding: 10px;
-    font-family: 'Sriracha', cursiva;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
