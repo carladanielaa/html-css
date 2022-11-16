@@ -1,12 +1,12 @@
 @charset "UTF-8";
-
+/*
 @import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
 
 @import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family= Great+Vibes & display = swap');
 @import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600;700 & family= Passion+One:wght@400;700;900 & display=trocar');
 
-/*isso aqui são as variavel que são as fontes*/
+/*isso aqui são as variavel que são as fontes
 :root{
 --fonte1: Verdana, Geneva, Tahoma, sans-serif;
 --fonte2: 'Passion One', cursiva;
@@ -14,7 +14,11 @@
 --fonte4: 'Great Vibes', cursiva;
 --fonte5: 'Dancing Script', cursiva;
 }
-
+*/
+@font-face {
+    font-family: "PassionOne-Black";
+    src: url("/asess/fonte/passion/PassionOne-Black.ttf");
+  }
 * {
     margin: 0px;
     padding: 0px;
@@ -23,7 +27,7 @@
 html, body {
     min-height: 100vh;
     background-color: aliceblue;
-    font-family:var(--fonte1)/*essa fonte são daqui , ai oega normal , so não quer pega as que eu impotei*/
+    font-family: "PassionOne-Black";/*essa fonte são daqui , ai oega normal , so não quer pega as que eu impotei*/
 }
 header {
     background-color: rgb(121, 94, 6);

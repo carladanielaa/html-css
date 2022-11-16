@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "PassionOne-Regular";
+  src: url(".assets/fonts/Passion/PassionOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Sriracha-Regular";
+  src: url("/assets/fonts/Sriracha/Sriracha-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+  /*essa fonte são daqui , ai oega normal , so não quer pega as que eu impotei*/
+}
+header {
+  background-color: rgb(121, 94, 6);
+  color: white;
+  text-align: center;
+}
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 10vw; /*isso deixa a letra com 10% do tamlho da tela , no caso a letra aumneta ou diminui de a =cordo com a tela*/
+}
+header > p {
+  padding-bottom: 50px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  /*isso é o que da o efeito paralax*/
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: "Sriracha-Regular"; /*essa mesmo não pega*/
+  font-size: 2.5vw;
+}
+section > p {
+  padding-bottom: 2em;
+}
+section.normal {
+  background-color: white;
+  color: black;
+}
+section.imagem {
+  background-color: rgb(48, 44, 44);
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  background-size: cover;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+  background-attachment: fixed; /*isso causa o efeito paralax*/
+}
+section.imagem > p {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0.514);
+}
+section#img01 {
+  background-image: url("../imagens/borboleta.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+section#img02 {
+  background-image: url("../imagens/livro.jpeg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+footer {
+  background-color: rgb(121, 94, 6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
