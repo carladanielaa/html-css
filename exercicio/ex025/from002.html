@@ -8,19 +8,23 @@
 </head>
 <body>
     <h1>Teste de formulário </h1>
-    <form action="cadastro.php"method="post" autocomplete="on">
+    <form onsubmit="pegarDados(event)" >
         <p>
             <label for="iusu">Usuario:</label>
-            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuario" autocomplete="username">
+            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuario" autocomplete="username" value="miguel afonso">
+        </p>
+        <p>
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" name="email" id="email" value="miguel@gmail.com">
         </p>
         <p>
         <label for="isen">senha:</label>
-        <input type="password" name="sen" id="isen"required minlength="8" size="8" placeholder="minino 8 letra" autocomplete="current-password">
+        <input type="password" name="sen" id="isen"required minlength="8" size="8" placeholder="minino 8 letra" autocomplete="current-password" value="12345678">
     </p>
     <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <button type="submit">Enviar</button>
     </p>
     </form>
+    <script src="./formularios.js"></script>
 </body>
 </html>
